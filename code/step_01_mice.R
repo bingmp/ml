@@ -6,26 +6,26 @@ if (!require("mice")) installed.packages("mice")
 rm(list = ls())
 df_fct <- readxl::read_excel("./rawData/bpd_final.xlsx", 1) %>%
   as_tibble() %>%
-  mutate(across(.cols = -c(hospital_id, gender, ethnicity, province), .fns = as.numeric)) %>%
-  mutate(across(.cols = -hospital_id, .fns = as.factor))
+  mutate(across(.cols = -c(id, gender, ethnicity, province), .fns = as.numeric)) %>%
+  mutate(across(.cols = -id, .fns = as.factor))
 
 df_num <- merge(readxl::read_excel("./rawData/bpd_final.xlsx", 2),
   readxl::read_excel("./rawData/bpd_final.xlsx", 3),
-  by = "hospital_id"
+  by = "id"
 ) %>%
-  select(hospital_id, name, everything()) %>%
-  mutate(across(.cols = -c(hospital_id, name), .fns = as.numeric))
+  select(id, name, everything()) %>%
+  mutate(across(.cols = -c(id, name), .fns = as.numeric))
 
 ## bpd
-# df0 <- merge(df_fct, df_num, by = "hospital_id") %>%
+# df0 <- merge(df_fct, df_num, by = "id") %>%
 #   rename_all(tolower) %>%
-#   select(hospital_id, name,severity_of_bpd, everything())
+#   select(id, name,severity_of_bpd, everything())
 # df1 <- df0[!is.na(df0$severity_of_bpd),]
 
 ## ph
-df1 <- merge(df_fct, df_num, by = "hospital_id") %>%
+df1 <- merge(df_fct, df_num, by = "id") %>%
   rename_all(tolower) %>%
-  select(hospital_id, name, severity_of_bpd, everything())
+  select(id, name, severity_of_bpd, everything())
 
 # df_over_10_na <- df1[df1 %>% apply(1, FUN = function(x){is.na(x) %>% sum()}) <= 10,]
 # write.csv(df_over_10_na,file = 'csv/over_10_na.csv',row.names = F,fileEncoding = "GB18030")

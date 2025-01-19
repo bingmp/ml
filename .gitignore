@@ -2,7 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
+ml_bpd.Rproj
 
 # rawData/
+rawData/ids.csv
+
 rds/
-result/
+# result/
+
+shinyApp/www
+
+README.Rmd

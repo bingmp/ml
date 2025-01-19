@@ -1,0 +1,11 @@
+"vars",".y.","group1","group2","n1","n2","statistic","p","p.signif","y.position","groups","xmin","xmax"
+"admission_weight","value","Mild","Severe",66,641,31414,8.33e-11,"****",10639.6328,,1,2
+"age_days","value","Mild","Severe",66,641,34582,3.3700000000000004e-21,"****",1505.6328,,1,2
+"birth_weight","value","Mild","Severe",66,641,30166,1.16e-8,"****",6009.6328,,1,2
+"gestation_age","value","Mild","Severe",66,641,26754,3.92e-4,"***",1436.6328,,1,2
+"pda_maximum_diameter","value","Mild","Severe",66,641,11938,4.88e-9,"****",1147.3328000000001,,1,2
+"pda_blood_flow_velocity","value","Mild","Severe",66,641,13132,2.4e-7,"****",1152.3128000000002,,1,2
+"area_of_tricuspid_regurgitation","value","Mild","Severe",66,641,28985.5,4.49e-7,"****",1145.0328000000002,,1,2
+"apgar_score_1min","value","Mild","Severe",66,641,13357.5,6.53e-7,"****",1149.6328,,1,2
+"apgar_score_5min","value","Mild","Severe",66,641,24562,0.026,"*",1149.6328,,1,2
+"apgar_score_10min","value","Mild","Severe",66,641,24624.5,0.0206,"*",1149.6328,,1,2

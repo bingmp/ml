@@ -1,0 +1,34 @@
+en,cn
+English,中文
+Help,使用说明
+CHCMU,重医儿院
+Machine learning,机器学习
+Summary,总结
+Benchmark,模型比较
+Resample,重抽样
+Train and Test,训练与测试
+Learner,学习器
+Raw data,初始数据
+Measure Table,性能指标
+
+Input file,输入文件
+Show Data,显示数据
+Sample data,参考数据
+Start drawing,开始画图
+Start Analysis,开始分析
+
+labels,标签
+
+basic,基础
+title,标题
+axis.title,轴标题
+axis.text,轴文本
+axis.ticks,轴刻度
+legend.title,图例标题
+legend.text,图例文本
+label.color,标签颜色
+legend.position,图例位置
+download plot,下载图形
+plot.weight,下载图宽
+plot.high,下载图高
+plot.dpi,分辨率
